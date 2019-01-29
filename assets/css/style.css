@@ -75,6 +75,131 @@
     margin-bottom:0;
   } 
   
+  .all{
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+  }
+
+  .all:hover{
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotate(0deg);
+  }
+  .all:hover .text{
+    opacity: 1;
+  }
+
+  .all:hover > div{
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  .all:hover .explainer{
+    opacity: 0;
+  }
+
+  .left{
+    width: 200px;
+    height: 125px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+    opacity: 0;
+    transition: all .3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #58d;
+    cursor: pointer;
+    background-blend-mode: color;
+
+  }
+  .center{
+    width: 200px;
+    height: 125px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+    opacity: 0;
+    transition: all .3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #58d;
+    cursor: pointer;
+    background-blend-mode: color;
+  }
+ .right{
+  width: 200px;
+  height: 125px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: all .3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #58d;
+  cursor: pointer;
+  background-blend-mode: color;
+}
+
+.left:hover{
+   box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+   background-color: #ccf;
+}
+
+.center:hover{
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  background-color: #ccf;
+}
+
+.right:hover{
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  background-color: #ccf;
+}
+
+.text{
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease;
+  bottom: 0;
+  left: 5px;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+}
+
+.left{
+  transform: translateX(-30px) translateZ(-25px) rotateY(-10deg);
+  background-image: url("../images/Project.png");
+}
+.center{
+  opacity: 1;
+  background-image: url('../images/career.png');
+}
+
+.right{
+  transform: translateX(30px) translateZ(-25px) rotateY(10deg);
+  background-image: url("../images/school.png");
+}
   @media(max-width:960px){
     .body{
       padding-right:3rem;
