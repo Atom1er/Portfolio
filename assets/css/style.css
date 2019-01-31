@@ -11,6 +11,9 @@
     color:#333;
     overflow-x:hidden;
   }
+  .MainContent{
+    background-color: black;
+  }
 
   .body{
     max-width:960px;
@@ -39,8 +42,10 @@
   }
   
   .SecondRow{
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: block;
-    background-color: rgb(168, 92, 219);
+    background-color:  rgb(6, 107, 175);
 }
 
   .header-overlay{
@@ -50,7 +55,7 @@
     left:0;
     width:100vw;
     z-index:1;
-    background-color: rgb(33, 31, 53);
+    background-color: rgb(6, 107, 175);
     opacity:0.85;
   }
   
@@ -84,6 +89,9 @@
 
   .Introduction{
     margin-top: 100px;
+    background-color: rgba(44, 45, 49, 0.692);
+    padding: 15px;
+    border-radius: 15px;
   }
 
   #DefaultNav{
