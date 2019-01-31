@@ -1,8 +1,3 @@
-.SecondRow{
-    margin-bottom: 0%;
-    background-color: rgb(168, 92, 219);
-}
-
 *{
     box-sizing: border-box;
   }
@@ -21,7 +16,7 @@
     max-width:960px;
     height:100vh;
     display:flex;
-    align-items:center;
+    /* align-items:center; */
     color:#fff;
     padding-left:1rem;
     padding-right:1rem;
@@ -43,6 +38,11 @@
     min-width:100%;
   }
   
+  .SecondRow{
+    display: block;
+    background-color: rgb(168, 92, 219);
+}
+
   .header-overlay{
     height:100vh;
     position: absolute;
@@ -58,8 +58,6 @@
     z-index:2;
   }
   
-
-  
   .header-content p{
     font-size:1.5rem;
     display:block;
@@ -68,12 +66,57 @@
 
   .header-content img{
       border-radius: 5px;
+      margin-right: 10px;
+      float: left;
   }
- 
+
+  .NavBarSection{
+    display:none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 2;
+  }
+
+
+  .Introduction{
+    margin-top: 100px;
+  }
+
+  #DefaultNav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 2;
+  }
+
+  .DefNaBar{
+    margin-right: auto;
+  }
+
+  .DefNaBarElement{
+    margin: 15px;
+  }
+
+  .DefNaBarElement:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 .header-content h1{
     font-size:50px;
     margin-bottom:0;
-  } 
+  }
+
+  .BrefIntro{
+    text-align: justify;
+  }
   
   .all{
     display: flex;
@@ -161,18 +204,21 @@
 }
 
 .left:hover{
-   box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+   box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
    background-color: #ccf;
+   background-image: url("../images/school.png");
 }
 
 .center:hover{
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
   background-color: #ccf;
+  background-image: url('../images/career.png');
 }
 
 .right:hover{
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
   background-color: #ccf;
+  background-image: url("../images/Project.png");
 }
 
 .text{
@@ -189,6 +235,7 @@
 
 .left{
   transform: translateX(-30px) translateZ(-25px) rotateY(-10deg);
+  opacity: 1;
   background-image: url("../images/Project.png");
 }
 .center{
@@ -197,12 +244,47 @@
 }
 
 .right{
+  opacity: 1;
   transform: translateX(30px) translateZ(-25px) rotateY(10deg);
   background-image: url("../images/school.png");
 }
   @media(max-width:960px){
+   
     .body{
       padding-right:3rem;
       padding-left:3rem;
+    }
+
+    .header-content p{
+      font-size:1rem;
+    }
+    
+  
+
+  }
+
+  @media(max-width: 650px){
+
+    #title{
+      display: none;
+    }
+    .header-content img{
+      position: relative;
+      display: block;
+      border-radius: 5px;
+    }
+
+    #DefaultNav{
+      display: none;
+    }
+
+    #navbarText{
+      display: block;
+      z-index: 2;
+    }
+
+    .NaBarElement{
+      margin: 2px 5px;
+      padding: 5px;
     }
   }

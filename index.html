@@ -8,8 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     <script src="./assets/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -20,9 +26,7 @@
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi recusandae eum at similique suscipit
-                voluptate ab, maxime nostrum animi sit numquam sint magni fuga impedit labore odit, asperiores ullam
-                qui.</p>
+            <!-- <div id="defaultNav">
                 <div class="all">
                     <div class="left">
                         <div class="text">Career</div>
@@ -32,14 +36,68 @@
                         <div class="text">Education</div>
                     </div>
                     <div class="right">
-                        <div class="text">Hosting</div>
+                        <div class="text">Projects</div>
                     </div>
                 </div>
-            <!-- <img src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px"> -->           
-        </div>
-        <div class="SecondRow">
-            <div class="container">
+            </div> -->
+            <!-- <section id="NavBarSection">
+                <div class="NavB">
+                    <div class="col-12 NaBarElement" href="#">Career</div>
+                    <div class="col-12 NaBarElement" href="#">Projects</div>
+                    <div class="col-12 NaBarElement" href="#">About Me</div>
+                </div>
+            </section> -->
+            <div id="DefaultNav">
+                <nav class="navbar navbar-expand navbar-dark bg-dark ">
+                    <ul class="navbar-nav DefNaBar">
+                        <li class="nav-item active">
+                            <div class="text-white bg-dark DefNaBarElement" href="#">Career</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="text-white bg-dark DefNaBarElement" href="#">Projects</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="text-white bg-dark DefNaBarElement" href="#">About Me</div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <div class="pos-f-t NavBarSection" id="navbarText">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <!-- <h4 class="text-white">Menu</h4> -->
+                        <span class="text-muted">
+                            <div class="text-white bg-dark NaBarElement" href="#">Career</div>
+                            <div class="text-white bg-dark NaBarElement" href="#">Projects</div>
+                            <div class="text-white bg-dark NaBarElement" href="#">About Me</div>
+                        </span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <span><h4>Thomas Minoungou</h4></span>
+                </nav>
+            </div>
+            <div class="Introduction">
+                <div id="title"><h3>Thomas Minoungou</h3></div>
+                <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px">
+                <p class="BrefIntro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi recusandae eum
+                    at similique
+                    suscipit voluptate ab, maxime nostrum animi sit numquam sint magni fuga impedit labore odit,
+                    asperiores ullam qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at nam eligendi
+                    quia maxime voluptatem facilis necessitatibus pariatur, eius impedit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Similique quasi quod aperiam vitae laborum minima quos dignissimos,
+                    nisi veniam soluta?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="SecondRow">
+        <div class="container-fluid">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur corrupti repellendus quas, dolore ex similique. Facilis, quia quae est, consequuntur exercitationem cum maxime consectetur adipisci ea nostrum fugiat cupiditate quidem voluptas dolores ut quisquam doloribus eum vitae, quod sunt incidunt minus? Dolor reprehenderit sequi nobis sint dolorum quidem esse eius adipisci ipsum distinctio soluta eveniet non fuga sunt facilis quod harum, consectetur obcaecati error officia suscipit, quis ut nisi enim. Animi fuga error officiis accusantium rem repellendus aliquid provident dolores eos libero, tempora mollitia inventore dolore? Incidunt voluptatum perspiciatis nesciunt impedit libero sunt eligendi atque consectetur officiis itaque.</p>
         </div>
     </div>
 
