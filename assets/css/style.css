@@ -12,7 +12,7 @@
     overflow-x:hidden;
   }
   .MainContent{
-    background-color: black;
+    background-color:#deeaee;
   }
 
   .body{
@@ -42,10 +42,32 @@
   }
   
   .SecondRow{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: block;
-    background-color:  rgb(6, 107, 175);
+    background-color: #cab577;    
+    font-size:1.5rem;
+    font-weight:normal;
+    line-height:1.5;
+}
+
+#second, #third{
+  text-align: justify;
+  color: whitesmoke;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #333;
+  opacity: 0.6;
+}
+.ThirdRow{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+    background-color:  #838060;
+    font-size:1.5rem;
+    font-weight:normal;
+    line-height:1.5;
 }
 
   .header-overlay{
@@ -55,7 +77,10 @@
     left:0;
     width:100vw;
     z-index:1;
-    background-color: rgb(6, 107, 175);
+    background-image: radial-gradient(farthest-corner at 0% 0%,rgb(46, 133, 75), rgb(44, 146, 131),black);
+    /* background-color:  #4ABDAC; */
+    /* background-color: #800020; */
+    /* background-image: linear-gradient(to left, rgba(14, 0, 41, 0.25),#800020); */
     opacity:0.85;
   }
   
@@ -89,12 +114,17 @@
 
   .Introduction{
     margin-top: 100px;
-    background-color: rgba(44, 45, 49, 0.692);
+    /* background-color: rgb(14, 0, 41); */
+    /* background-color: purple; */
+    /* opacity: 0.85; */
     padding: 15px;
     border-radius: 15px;
   }
 
   #DefaultNav{
+    background-image: radial-gradient(farthest-corner at 0% 0%, green,#4ABDAC,black);
+    /* background-color: slategray; */
+    /* background-color: rgb(14, 0, 41); */
     position: absolute;
     top: 0%;
     left: 0%;
@@ -110,8 +140,18 @@
 
   .DefNaBarElement{
     margin: 15px;
+    border: 0px;
+    background-color:none;
+    color: beige;
   }
 
+  .DefNaBarElement > a{
+    color: beige;
+  }
+
+  #contact{
+    background-color: rgb(0,0,0, 0);
+  }
   .DefNaBarElement:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -124,6 +164,7 @@
 
   .BrefIntro{
     text-align: justify;
+    color: beige;
   }
   
   .all{
@@ -256,6 +297,22 @@
   transform: translateX(30px) translateZ(-25px) rotateY(10deg);
   background-image: url("../images/school.png");
 }
+
+#EducationThumbnail{
+  margin: 15px;
+  width: 300px;
+  float: right;
+  display: block;
+}
+
+#CareerThumbnail{
+  margin: 15px;
+  width: 300px;
+  float: left;
+  display: block;
+}
+
+
   @media(max-width:960px){
    
     .body{
@@ -293,6 +350,7 @@
 
     .NaBarElement{
       margin: 2px 5px;
-      padding: 5px;
+      padding: 10px;
+      border-bottom: solid 1px grey;
     }
   }

@@ -21,13 +21,13 @@
 
 <body>
     <div class="MainContent">
-    <div class="container-fluid body">
-        <div class="firstRow">
-            <video src="./assets/images/Typing_dark_04_Videvo.mov" autoplay="true" loop="true"></video>
-        </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <!-- <div id="defaultNav">
+        <div class="container-fluid body">
+            <div class="firstRow">
+                <video src="./assets/images/Typing_dark_04_Videvo.mov" autoplay="true" loop="true"></video>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="header-content">
+                <!-- <div id="defaultNav">
                 <div class="all">
                     <div class="left">
                         <div class="text">Career</div>
@@ -41,68 +41,165 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <section id="NavBarSection">
+                <!-- <section id="NavBarSection">
                 <div class="NavB">
                     <div class="col-12 NaBarElement" href="#">Career</div>
                     <div class="col-12 NaBarElement" href="#">Projects</div>
                     <div class="col-12 NaBarElement" href="#">About Me</div>
                 </div>
             </section> -->
-            <div id="DefaultNav">
-                <nav class="navbar navbar-expand navbar-dark bg-dark ">
-                    <ul class="navbar-nav DefNaBar">
-                        <li class="nav-item active">
-                            <div class="text-white bg-dark DefNaBarElement" href="./career.html">Career</div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="text-white bg-dark DefNaBarElement" href="https://github.com/Atom1er">Projects</div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="text-white bg-dark DefNaBarElement" href="./about.html">About Me</div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="pos-f-t NavBarSection" id="navbarText">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                        <!-- <h4 class="text-white">Menu</h4> -->
-                        <span class="text-muted">
-                            <div class="text-white bg-dark NaBarElement" href="career.html">Career</div>
-                            <div class="text-white bg-dark NaBarElement" href="https://github.com/Atom1er">Projects</div>
-                            <div class="text-white bg-dark NaBarElement" href="about.html">About Me</div>
+                <div id="DefaultNav">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav DefNaBar">
+                            <li class="nav-item">
+                                <div class="text-white DefNaBarElement"><a href="#SecondRow">Career</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="text-white DefNaBarElement"><a href="https://github.com/Atom1er">Projects</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <div class="text-white "><a href="#">Contact</a></div> -->
+                                <button id="contact" class="DefNaBarElement" data-toggle="modal" data-target="#exampleModal"
+                                    data-whatever="@mdo">Contact</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pos-f-t NavBarSection" id="navbarText">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                            <!-- <h4 class="text-white">Menu</h4> -->
+                            <span class="text-muted">
+                                <div class="text-white bg-dark NaBarElement"><a href="#SecondRow">Career</a></div>
+                                <div class="text-white bg-dark NaBarElement"><a href="https://github.com/Atom1er">Projects</a></div>
+                                <div class="text-white bg-dark NaBarElement"><a href="#">Contact</a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <span>
+                            <h4>Thomas Minoungou</h4>
                         </span>
+                    </nav>
+                </div>
+                <div class="Introduction">
+                    <div id="title">
+                        <h3>Thomas Minoungou</h3>
+                    </div>
+                    <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px">
+                    <p class="BrefIntro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi recusandae
+                        eum
+                        at similique
+                        suscipit voluptate ab, maxime nostrum animi sit numquam sint magni fuga impedit labore odit,
+                        asperiores ullam qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at nam
+                        eligendi
+                        quia maxime voluptatem facilis necessitatibus pariatur, eius impedit. Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit. Similique quasi quod aperiam vitae laborum minima quos
+                        dignissimos,
+                        nisi veniam soluta?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="SecondRow" id="SecondRow">
+            <div class="container-fluid">
+                <div>
+                    <h3>Career</h3>
+                </div>
+                <img id="EducationThumbnail" src="./assets/images/Education_Section.png" alt="Education thumbnail">
+                <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur
+                    corrupti repellendus quas, dolore ex similique. Facilis, quia quae est, consequuntur exercitationem
+                    cum maxime consectetur adipisci ea nostrum fugiat cupiditate quidem voluptas dolores ut quisquam
+                    doloribus eum vitae, quod sunt incidunt minus? Dolor reprehenderit sequi nobis sint dolorum quidem
+                    esse eius adipisci ipsum distinctio soluta eveniet non fuga sunt facilis quod harum, consectetur
+                    obcaecati error officia suscipit, quis ut nisi enim. Animi fuga error officiis accusantium rem
+                    repellendus aliquid provident dolores eos libero, tempora mollitia inventore dolore? Incidunt
+                    voluptatum perspiciatis nesciunt impedit libero sunt eligendi atque consectetur officiis itaque.</p>
+            </div>
+        </div>
+        <div class="ThirdRow">
+            <div class="container-fluid">
+                <div>
+                    <h3>Projects</h3>
+                </div>
+                <img id="CareerThumbnail" src="./assets/images/career_Section.png" alt="Career thumbnail">
+                <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur
+                    corrupti repellendus quas, dolore ex similique. Facilis, quia quae est, consequuntur exercitationem
+                    cum maxime consectetur adipisci ea nostrum fugiat cupiditate quidem voluptas dolores ut quisquam
+                    doloribus eum vitae, quod sunt incidunt minus? Dolor reprehenderit sequi nobis sint dolorum quidem
+                    esse eius adipisci ipsum distinctio soluta eveniet non fuga sunt facilis quod harum, consectetur
+                    obcaecati error officia suscipit, quis ut nisi enim. Animi fuga error officiis accusantium rem
+                    repellendus aliquid provident dolores eos libero, tempora mollitia inventore dolore? Incidunt
+                    voluptatum perspiciatis nesciunt impedit libero sunt eligendi atque consectetur officiis itaque.</p>
+            </div>
+        </div>
+        <div class="Contact">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                    <input type="email" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
                     </div>
                 </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <span><h4>Thomas Minoungou</h4></span>
-                </nav>
-            </div>
-            <div class="Introduction">
-                <div id="title"><h3>Thomas Minoungou</h3></div>
-                <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px">
-                <p class="BrefIntro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi recusandae eum
-                    at similique
-                    suscipit voluptate ab, maxime nostrum animi sit numquam sint magni fuga impedit labore odit,
-                    asperiores ullam qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at nam eligendi
-                    quia maxime voluptatem facilis necessitatibus pariatur, eius impedit. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Similique quasi quod aperiam vitae laborum minima quos dignissimos,
-                    nisi veniam soluta?
-                </p>
             </div>
         </div>
     </div>
-    <div class="SecondRow">
-        <div class="container-fluid">
-            <div></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur corrupti repellendus quas, dolore ex similique. Facilis, quia quae est, consequuntur exercitationem cum maxime consectetur adipisci ea nostrum fugiat cupiditate quidem voluptas dolores ut quisquam doloribus eum vitae, quod sunt incidunt minus? Dolor reprehenderit sequi nobis sint dolorum quidem esse eius adipisci ipsum distinctio soluta eveniet non fuga sunt facilis quod harum, consectetur obcaecati error officia suscipit, quis ut nisi enim. Animi fuga error officiis accusantium rem repellendus aliquid provident dolores eos libero, tempora mollitia inventore dolore? Incidunt voluptatum perspiciatis nesciunt impedit libero sunt eligendi atque consectetur officiis itaque.</p>
-        </div>
-    </div>
-</div>
 </body>
+<!-- <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example multiple select</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form> -->
 
 </html>
