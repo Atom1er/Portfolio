@@ -8,7 +8,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     var modal = $(this);
     modal.find('.modal-title').text('New message to ' + recipient);
     modal.find('.modal-body input').val(recipient);
-  })
+  });
 
 
   /// Animation from ScrollReveal ////
@@ -17,7 +17,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     duration:1500,
     origin: 'top',
     distance: '100px'
-  })
+  });
   sr.reveal('.Introduction', {
       duration: 3000,
       origin: 'bottom',
