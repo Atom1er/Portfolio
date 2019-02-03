@@ -368,8 +368,20 @@
     }
 
     .NaBarElement{
+      background-color:none;
+      color: beige;
       margin: 2px 5px;
       padding: 10px;
       border-bottom: solid 1px grey;
+    }
+    .NaBarElement > a{
+      color: beige;
+    }
+    .NaBarElement > a:hover{
+      color: beige;
+      text-decoration: underline;
+    }
+    .NaBarElement:hover{
+      text-decoration: underline;
     }
   }
