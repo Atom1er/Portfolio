@@ -7,16 +7,18 @@
     <title>Thomas Minoungou</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <script src="./assets/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <script src="./assets/javascript/javascript.js" defer></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -27,40 +29,17 @@
             </div>
             <div class="header-overlay"></div>
             <div class="header-content">
-                <!-- <div id="defaultNav">
-                <div class="all">
-                    <div class="left">
-                        <div class="text">Career</div>
-                    </div>
-                    <div class="center">
-                        <div class="explainer"><span>About Me</span></div>
-                        <div class="text">Education</div>
-                    </div>
-                    <div class="right">
-                        <div class="text">Projects</div>
-                    </div>
-                </div>
-            </div> -->
-                <!-- <section id="NavBarSection">
-                <div class="NavB">
-                    <div class="col-12 NaBarElement" href="#">Career</div>
-                    <div class="col-12 NaBarElement" href="#">Projects</div>
-                    <div class="col-12 NaBarElement" href="#">About Me</div>
-                </div>
-            </section> -->
                 <div id="DefaultNav">
-                    <nav class="navbar navbar-expand">
-                        <ul class="navbar-nav DefNaBar">
-                            <li class="nav-item">
+                    <nav class="navbar bg-dark navbar-expand">
+                        <ul class="navbar-nav DefNaBar bg-dark">
+                            <li class="nav-item bg-dark">
                                 <div class="text-white DefNaBarElement"><a href="#SecondRow">Career</a></div>
                             </li>
-                            <li class="nav-item">
-                                <div class="text-white DefNaBarElement"><a href="https://github.com/Atom1er">Projects</a></div>
+                            <li class="nav-item bg-dark">
+                                <div class="text-white DefNaBarElement bg-dark"><a href="https://github.com/Atom1er">Projects</a></div>
                             </li>
-                            <li class="nav-item">
-                                <div class="text-white DefNaBarElement"><a data-toggle="modal" data-target="#exampleModal">Contact</a></div>
-                                <!-- <a id="contact" data-toggle="modal" data-target="#exampleModal"
-                                    >Contact</a> -->
+                            <li class="nav-item bg-dark">
+                                <div class="text-white DefNaBarElement bg-dark"><a data-toggle="modal" data-target="#exampleModal">Contact</a></div>
                             </li>
                         </ul>
                     </nav>
@@ -68,11 +47,11 @@
                 <div class="pos-f-t NavBarSection" id="navbarText">
                     <div class="collapse" id="navbarToggleExternalContent">
                         <div class="bg-dark p-4">
-                            <!-- <h4 class="text-white">Menu</h4> -->
                             <span class="text-muted">
                                 <div class="text-white bg-dark NaBarElement"><a href="#SecondRow">Career</a></div>
                                 <div class="text-white bg-dark NaBarElement"><a href="https://github.com/Atom1er">Projects</a></div>
-                                <div class="text-white bg-dark NaBarElement"><a class="DefNaBarElement" data-toggle="modal" data-target="#exampleModal">Contact</a></div>
+                                <div class="text-white bg-dark NaBarElement"><a class="DefNaBarElement" data-toggle="modal"
+                                        data-target="#exampleModal">Contact</a></div>
                             </span>
                         </div>
                     </div>
@@ -91,17 +70,12 @@
                         <h3>Thomas Minoungou</h3>
                     </div>
                     <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px">
-                    <p class="BrefIntro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi recusandae
-                        eum
-                        at similique
-                        suscipit voluptate ab, maxime nostrum animi sit numquam sint magni fuga impedit labore odit,
-                        asperiores ullam qui. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at nam
-                        eligendi
-                        quia maxime voluptatem facilis necessitatibus pariatur, eius impedit. Lorem ipsum dolor sit
-                        amet
-                        consectetur adipisicing elit. Similique quasi quod aperiam vitae laborum minima quos
-                        dignissimos,
-                        nisi veniam soluta?
+                    <p class="BrefIntro">Hello, <br> I am a future full stack web Designer. After my graduation in
+                        computer Science (Network Security) I decided to learn programing by attending the Rutgers
+                        BootCamp program.
+                        Check out all the progress I have made in three months. Feel free to check out my portfolio to
+                        see all the amazing app I have built. Interested in doing a project together? Feel free to get
+                        in touch with me!</p>
                     </p>
                 </div>
             </div>
@@ -109,7 +83,7 @@
         <div class="SecondRow" id="SecondRow">
             <div class="container-fluid">
                 <div>
-                    <h3>Career</h3>
+                    <h3 id="SecondRowTitle">Career</h3>
                 </div>
                 <img id="EducationThumbnail" src="./assets/images/Education_Section.png" alt="Education thumbnail">
                 <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur
@@ -125,17 +99,36 @@
         <div class="ThirdRow">
             <div class="container-fluid">
                 <div>
-                    <h3>Projects</h3>
+                    <h3 id="thirdRowTitle">Projects</h3>
                 </div>
-                <img id="CareerThumbnail" src="./assets/images/career_Section.png" alt="Career thumbnail">
-                <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perspiciatis! Consequatur
-                    corrupti repellendus quas, dolore ex similique. Facilis, quia quae est, consequuntur exercitationem
-                    cum maxime consectetur adipisci ea nostrum fugiat cupiditate quidem voluptas dolores ut quisquam
-                    doloribus eum vitae, quod sunt incidunt minus? Dolor reprehenderit sequi nobis sint dolorum quidem
-                    esse eius adipisci ipsum distinctio soluta eveniet non fuga sunt facilis quod harum, consectetur
-                    obcaecati error officia suscipit, quis ut nisi enim. Animi fuga error officiis accusantium rem
-                    repellendus aliquid provident dolores eos libero, tempora mollitia inventore dolore? Incidunt
-                    voluptatum perspiciatis nesciunt impedit libero sunt eligendi atque consectetur officiis itaque.</p>
+                <div id="third">
+                    <img id="CareerThumbnail" src="./assets/images/career_Section.png" alt="Career thumbnail">
+                    <a class="projectElement" href="https://atom1er.github.io/unit-4-game/">
+                        <h3>- R.P.G</h3>
+                    </a>
+                    <p>This is a Simple R.P.G game powered by JQuery and Bootstrap CSS Framework.</p>
+                    <a class="projectElement" href="https://atom1er.github.io/project1/">
+                        <h3>- Movie Finder</h3>
+                    </a>
+                    <p>Using TMDB Api, this app allows the User to find and watch some movies trailer.</p>
+                    <a class="projectElement" href="https://atom1er.github.io/GifTastic/">
+                        <h3>- Gif-Tastic</h3>
+                    </a>
+                    <p>Powered by the Giphy Api, this simple app allows you to find any kind of Gif.</p>
+                    <a class="projectElement" href="https://atom1er.github.io/Responsive-Portfolio/">
+                        <h3>- Portfolio Sample</h3>
+                    </a>
+                    <p>This is a simple portfolio layout using the Bootstrap CSS Framework.</p>
+                    <a class="projectElement" href="https://atom1er.github.io/TriviaGame/">
+                        <h3>- TriviaGame</h3>
+                    </a>
+                    <p>A simple quiz app build with JQuery</p>
+                    <a class="projectElement" href="https://atom1er.github.io/Word-Guess-Game/">
+                        <h3>- Guess The Word</h3>
+                    </a>
+                    <p>This is a basic guessing app, powered by your JavaScript and dynamically updating HTML and CSS.</p>
+                </div>
+
             </div>
         </div>
         <div class="Contact">
@@ -149,11 +142,11 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body modal-color">
                             <form>
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">E-mail:</label>
-                                    <input type="email" class="form-control" id="recipient-name">
+                                    <input type="email" class="form-control" id="recipient-name" placeholder="example@xyz.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">Message:</label>
@@ -171,35 +164,5 @@
         </div>
     </div>
 </body>
-<!-- <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form> -->
 
 </html>

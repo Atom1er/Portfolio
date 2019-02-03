@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Atom1er/Portfolio#readme",
   "dependencies": {
-    "jshint": "^2.9.7"
+    "jshint": "^2.9.7",
+    "scrollreveal": "^4.0.5"
   }
 }

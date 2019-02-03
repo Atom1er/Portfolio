@@ -11,6 +11,7 @@
     color:#333;
     overflow-x:hidden;
   }
+  
   .MainContent{
     background-color:#deeaee;
   }
@@ -19,7 +20,6 @@
     max-width:960px;
     height:100vh;
     display:flex;
-    /* align-items:center; */
     color:#fff;
     padding-left:1rem;
     padding-right:1rem;
@@ -45,13 +45,17 @@
     padding-top: 25px;
     padding-bottom: 25px;
     display: block;
-    background-color: #cab577;    
+    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    box-shadow: 5px 10px #888888;
     font-size:1.5rem;
     font-weight:normal;
     line-height:1.5;
 }
 
 #second, #third{
+  box-sizing: content-box;
   text-align: justify;
   color: whitesmoke;
   margin: 15px;
@@ -60,11 +64,23 @@
   background: #333;
   opacity: 0.6;
 }
+
+#third > a:hover{
+  color: beige;
+  text-decoration: underline;
+}
+
+.projectElement{
+  color: beige;
+  display: inline-block;
+  margin: 10px;
+}
 .ThirdRow{
+    box-sizing: content-box;
     padding-top: 25px;
     padding-bottom: 25px;
     display: block;
-    background-color:  #838060;
+    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
     font-size:1.5rem;
     font-weight:normal;
     line-height:1.5;
@@ -77,10 +93,7 @@
     left:0;
     width:100vw;
     z-index:1;
-    background-image: radial-gradient(farthest-corner at 0% 0%,rgb(46, 133, 75), rgb(44, 146, 131),black);
-    /* background-color:  #4ABDAC; */
-    /* background-color: #800020; */
-    /* background-image: linear-gradient(to left, rgba(14, 0, 41, 0.25),#800020); */
+    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
     opacity:0.85;
   }
   
@@ -114,17 +127,11 @@
 
   .Introduction{
     margin-top: 100px;
-    /* background-color: rgb(14, 0, 41); */
-    /* background-color: purple; */
-    /* opacity: 0.85; */
     padding: 15px;
     border-radius: 15px;
   }
 
   #DefaultNav{
-    background-image: radial-gradient(farthest-corner at 0% 0%, green,#4ABDAC,black);
-    /* background-color: slategray; */
-    /* background-color: rgb(14, 0, 41); */
     position: absolute;
     top: 0%;
     left: 0%;
@@ -147,6 +154,11 @@
 
   .DefNaBarElement > a{
     color: beige;
+  }
+
+  .DefNaBarElement > a:hover{
+    color: beige;
+    text-decoration: underline;
   }
 
   #contact{
@@ -312,6 +324,10 @@
   display: block;
 }
 
+.modal-color{
+  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+  color: beige;
+}
 
   @media(max-width:960px){
    
@@ -321,7 +337,7 @@
     }
 
     .header-content p{
-      font-size:1rem;
+      font-size:1.5rem;
     }
     
   
@@ -329,6 +345,9 @@
   }
 
   @media(max-width: 650px){
+    body{
+      font-size: 1rem;
+    }
 
     #title{
       display: none;
