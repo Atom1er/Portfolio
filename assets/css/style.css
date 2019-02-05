@@ -54,6 +54,10 @@
     line-height:1.5;
 }
 
+#SecondRowTitle, #thirdRowTitle{
+  color: beige;
+}
+
 #second, #third{
   box-sizing: content-box;
   text-align: justify;
@@ -124,11 +128,32 @@
     z-index: 2;
   }
 
+  .socialMediaDefault{
+    float: right;
+  }
 
+
+  .socialMediaDefault > a > img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .socialMedia{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .socialMedia > a > img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+  }
   .Introduction{
+    background-color: rgba(43, 42, 42, 0.6);
     margin-top: 100px;
     padding: 15px;
     border-radius: 15px;
+    line-height: 50px;
   }
 
   #DefaultNav{
