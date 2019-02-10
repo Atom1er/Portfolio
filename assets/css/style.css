@@ -1,412 +1,315 @@
-*{
-    box-sizing: border-box;
-  }
-  
-  body{
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:1rem;
-    font-weight:normal;
-    line-height:1.5;
-    color:#333;
-    overflow-x:hidden;
-  }
-  
-  .MainContent{
-    background-color:#deeaee;
-  }
 
-  .body{
-    max-width:960px;
-    height:100vh;
-    display:flex;
-    color:#fff;
-    padding-left:1rem;
-    padding-right:1rem;
-    margin:auto;
-    text-align:center;
-  }
-  
-  .firstRow{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-  }
-  
-  .firstRow video{
-    min-height:100%;
-    min-width:100%;
-  }
-  
-  .SecondRow{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: block;
-    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
-    border-bottom: 3px solid;
-    border-top: 3px solid;
-    box-shadow: 5px 10px #888888;
-    font-size:1.5rem;
-    font-weight:normal;
-    line-height:1.5;
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:1rem;
+  font-weight:normal;
+  line-height:1.5;
+  color:#333;
+  overflow-x:hidden;
+}
+
+.MainContent{
+  background-color:#deeaee;
+}
+
+.body{
+  max-width:960px;
+  height:100vh;
+  display:flex;
+  color:#fff;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.firstRow{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.firstRow video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.SecondRow{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  box-shadow: 5px 10px #888888;
+  font-size:1.5rem;
+  font-weight:normal;
+  line-height:1.5;
 }
 
 #SecondRowTitle, #thirdRowTitle{
-  color: beige;
+color: beige;
 }
 
 #second, #third{
-  box-sizing: content-box;
-  text-align: justify;
-  color: whitesmoke;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 15px;
-  background: #333;
-  opacity: 0.6;
+box-sizing: content-box;
+text-align: justify;
+color: whitesmoke;
+margin: 15px;
+padding: 15px;
+border-radius: 15px;
+background: #333;
+opacity: 0.6;
 }
 
 #third > a:hover{
+color: beige;
+text-decoration: underline;
+}
+
+.projectElement{
+color: beige;
+display: inline-block;
+margin: 10px;
+}
+.ThirdRow{
+  box-sizing: content-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+  font-size:1.5rem;
+  font-weight:normal;
+  line-height:1.5;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+  opacity:0.85;
+}
+
+.header-content{
+  z-index:2;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+.header-content img{
+    border-radius: 5px;
+    margin-right: 10px;
+    float: left;
+}
+
+.NavBarSection{
+  display:none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.socialMediaDefault{
+  float: right;
+}
+
+
+.socialMediaDefault > a > img{
+  width: 25px;
+  height: 25px;
+}
+
+.socialMedia{
+  display: inline-block;
+  width: 100%;
+}
+
+.socialMedia > a > img{
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+.Introduction{
+  background-color: rgba(43, 42, 42, 0.6);
+  margin-top: 100px;
+  padding: 15px;
+  border-radius: 15px;
+  line-height: 50px;
+}
+
+#DefaultNav{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.DefNaBar{
+  margin-right: auto;
+}
+
+.DefNaBarElement{
+  margin: 15px;
+  border: 0px;
+  background-color:none;
+  color: beige;
+}
+
+.DefNaBarElement > a{
+  color: beige;
+}
+
+.DefNaBarElement > a:hover{
   color: beige;
   text-decoration: underline;
 }
 
-.projectElement{
-  color: beige;
-  display: inline-block;
-  margin: 10px;
+#contact{
+  background-color: rgb(0,0,0, 0);
 }
-.ThirdRow{
-    box-sizing: content-box;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: block;
-    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
-    font-size:1.5rem;
-    font-weight:normal;
-    line-height:1.5;
+.DefNaBarElement:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
-
-  .header-overlay{
-    height:100vh;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100vw;
-    z-index:1;
-    background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
-    opacity:0.85;
-  }
-  
-  .header-content{
-    z-index:2;
-  }
-  
-  .header-content p{
-    font-size:1.5rem;
-    display:block;
-    padding-bottom:2rem;
-  }
-
-  .header-content img{
-      border-radius: 5px;
-      margin-right: 10px;
-      float: left;
-  }
-
-  .NavBarSection{
-    display:none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    z-index: 2;
-  }
-
-  .socialMediaDefault{
-    float: right;
-  }
-
-
-  .socialMediaDefault > a > img{
-    width: 25px;
-    height: 25px;
-  }
-
-  .socialMedia{
-    display: inline-block;
-    width: 100%;
-  }
-
-  .socialMedia > a > img{
-    width: 25px;
-    height: 25px;
-    margin-left: 15px;
-  }
-  .Introduction{
-    background-color: rgba(43, 42, 42, 0.6);
-    margin-top: 100px;
-    padding: 15px;
-    border-radius: 15px;
-    line-height: 50px;
-  }
-
-  #DefaultNav{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    margin-top: 10px;
-    width: 100%;
-    margin-bottom: 10px;
-    z-index: 2;
-  }
-
-  .DefNaBar{
-    margin-right: auto;
-  }
-
-  .DefNaBarElement{
-    margin: 15px;
-    border: 0px;
-    background-color:none;
-    color: beige;
-  }
-
-  .DefNaBarElement > a{
-    color: beige;
-  }
-
-  .DefNaBarElement > a:hover{
-    color: beige;
-    text-decoration: underline;
-  }
-
-  #contact{
-    background-color: rgb(0,0,0, 0);
-  }
-  .DefNaBarElement:hover{
-    text-decoration: underline;
-    cursor: pointer;
-  }
 
 .header-content h1{
-    font-size:50px;
-    margin-bottom:0;
-  }
-
-  .BrefIntro{
-    text-align: justify;
-    color: beige;
-  }
-  
-  .all{
-    display: flex;
-    perspective: 10px;
-    transform: perspective(300px) rotateX(20deg);
-    will-change: perspective;
-    perspective-origin: center center;
-    transition: all 1.3s ease-out;
-    justify-content: center;
-    transform-style: preserve-3d;
-  }
-
-  .all:hover{
-    perspective: 1000px;
-    transition: all 1.3s ease-in;
-    transform: perspective(10000px) rotate(0deg);
-  }
-  .all:hover .text{
-    opacity: 1;
-  }
-
-  .all:hover > div{
-    opacity: 1;
-    transition-delay: 0s;
-  }
-
-  .all:hover .explainer{
-    opacity: 0;
-  }
-
-  .left{
-    width: 200px;
-    height: 125px;
-    transform-style: preserve-3d;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
-    opacity: 0;
-    transition: all .3s ease;
-    transition-delay: 1s;
-    position: relative;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #58d;
-    cursor: pointer;
-    background-blend-mode: color;
-
-  }
-  .center{
-    width: 200px;
-    height: 125px;
-    transform-style: preserve-3d;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
-    opacity: 0;
-    transition: all .3s ease;
-    transition-delay: 1s;
-    position: relative;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #58d;
-    cursor: pointer;
-    background-blend-mode: color;
-  }
- .right{
-  width: 200px;
-  height: 125px;
-  transform-style: preserve-3d;
-  border-radius: 10px;
-  border: 1px solid #fff;
-  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
-  opacity: 0;
-  transition: all .3s ease;
-  transition-delay: 1s;
-  position: relative;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #58d;
-  cursor: pointer;
-  background-blend-mode: color;
+  font-size:50px;
+  margin-bottom:0;
 }
 
-.left:hover{
-   box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
-   background-color: #ccf;
-   background-image: url("../images/school.png");
+.BrefIntro{
+  text-align: justify;
+  color: beige;
 }
 
-.center:hover{
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
-  background-color: #ccf;
-  background-image: url('../images/career.png');
-}
-
-.right:hover{
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.4);
-  background-color: #ccf;
-  background-image: url("../images/Project.png");
-}
-
-.text{
-  transform: translateY(30px);
-  opacity: 0;
-  transition: all .3s ease;
-  bottom: 0;
-  left: 5px;
-  position: absolute;
-  will-change: transform;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
-}
-
-.left{
-  transform: translateX(-30px) translateZ(-25px) rotateY(-10deg);
-  opacity: 1;
-  background-image: url("../images/Project.png");
-}
-.center{
-  opacity: 1;
-  background-image: url('../images/career.png');
-}
-
-.right{
-  opacity: 1;
-  transform: translateX(30px) translateZ(-25px) rotateY(10deg);
-  background-image: url("../images/school.png");
-}
 
 #EducationThumbnail{
-  margin: 15px;
-  width: 300px;
-  float: right;
-  display: block;
+margin: 15px;
+width: 300px;
+float: right;
+display: block;
 }
 
 #CareerThumbnail{
-  margin: 15px;
-  width: 300px;
-  float: left;
-  display: block;
+margin: 15px;
+width: 300px;
+float: left;
+display: block;
 }
 
 .modal-color{
-  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
-  color: beige;
+background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
+color: beige;
 }
 
-  @media(max-width:960px){
-   
-    .body{
-      padding-right:3rem;
-      padding-left:3rem;
-    }
+.projectsPhotos{
+width: 130px;
+height: 75px;
+border-radius: 10px;
+border-left: #ff0342 solid 3px;
+border-top: solid #ff0040 3px;
+margin-right: 10px;
+}
 
-    .header-content p{
-      font-size:1.5rem;
-    }
-    
+@media(max-width:960px){
+  body{
+    font-size: 0.75rem;
+  }
+ 
+  .body{
+    padding-right:3rem;
+    padding-left:3rem;
+  }
+
+  .header-content p{
+    font-size:1.25rem;
+  }
   
 
+
+}
+
+@media(max-width: 650px){
+  body{
+    font-size: 0.75rem;
   }
 
-  @media(max-width: 650px){
-    body{
-      font-size: 1rem;
-    }
-
-    #title{
-      display: none;
-    }
-    .header-content img{
-      position: relative;
-      display: block;
-      border-radius: 5px;
-    }
-
-    #DefaultNav{
-      display: none;
-    }
-
-    #navbarText{
-      display: block;
-      z-index: 2;
-    }
-
-    .NaBarElement{
-      background-color:none;
-      color: beige;
-      margin: 2px 5px;
-      padding: 10px;
-      border-bottom: solid 1px grey;
-    }
-    .NaBarElement > a{
-      color: beige;
-    }
-    .NaBarElement > a:hover{
-      color: beige;
-      text-decoration: underline;
-    }
-    .NaBarElement:hover{
-      text-decoration: underline;
-    }
+  #title{
+    display: none;
   }
+  .header-content img{
+    position: relative;
+    display: block;
+    border-radius: 5px;
+  }
+
+  #DefaultNav{
+    display: none;
+  }
+
+  #navbarText{
+    display: block;
+    z-index: 2;
+  }
+
+  .NaBarElement{
+    background-color:none;
+    color: beige;
+    margin: 2px 5px;
+    padding: 10px;
+    border-bottom: solid 1px grey;
+  }
+  .NaBarElement > a{
+    color: beige;
+  }
+  .NaBarElement > a:hover{
+    color: beige;
+    text-decoration: underline;
+  }
+  .NaBarElement:hover{
+    text-decoration: underline;
+  }
+
+  .SecondRow{
+    font-size:1rem;
+  }
+
+  .ThirdRow{
+    font-size: 1rem;
+  }
+
+  #EducationThumbnail{
+    margin: 15px;
+    width: 150px;
+    display: block;
+  }
+  
+  #CareerThumbnail{
+    margin: 15px;
+    width: 150px;
+    display: block;
+  }
+}
