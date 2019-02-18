@@ -15,6 +15,7 @@ body{
 
 .MainContent{
   background-color:#deeaee;
+  /* display: none; */
 }
 
 .body{
@@ -43,28 +44,29 @@ body{
 }
 
 .SecondRow{
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
-  background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black);
-  border-bottom: 3px solid;
-  border-top: 3px solid;
-  box-shadow: 5px 10px #888888;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  /* display: block; */
+  /* background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black); */
+  /* border-bottom: 3px solid;
+  border-top: 3px solid; */
+  /* box-shadow: 5px 10px #888888; */
   font-size:1.5rem;
   font-weight:normal;
   line-height:1.5;
 }
 
 #SecondRowTitle, #thirdRowTitle{
+  z-index: 2;
 color: beige;
 }
 
 #second, #third{
 box-sizing: content-box;
-text-align: justify;
+/* text-align: justify; */
 color: whitesmoke;
-margin: 15px;
-padding: 15px;
+/* margin: 15px;
+padding: 15px; */
 border-radius: 15px;
 background: #333;
 opacity: 0.6;
@@ -207,8 +209,8 @@ margin: 10px;
 
 
 #EducationThumbnail{
-margin: 15px;
-width: 300px;
+margin: 2px;
+width: 150px;
 float: right;
 display: block;
 }

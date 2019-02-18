@@ -6,22 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Thomas Minoungou</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Local -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/welcome.css">
     <script src="./assets/javascript/javascript.js" defer></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- jQuery & bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
+    <div class="welcome">
+        <div class="all">
+            <div class="left">
+                <div class="left-2">
+                    <div class="text"><a href="#"></a>Projects</a></div>
+                </div>
+                <div class="left-1" data-toggle="modal"
+                data-target="#modalCareer">
+                    <div class="text"><a>Career</a></div>
+                </div>
+                <div class="left-0">
+                    <div class="text"><a href="#">Github Repositories</a></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="explainer"><span>welcome</span></div>
+                <div class="text">What do you think?</div>
+            </div>
+            <div class="right">
+                <div class="right-2" data-toggle="modal" data-target="#modal">
+                    <div class="text"><a>Contact</a></div>
+                </div>
+                <div class="right-1">
+                    <div class="text"><a href="#">About Me</a></div>
+                </div>
+                <div class="right-0">
+                    <div class="text"><a href="#">Social Media</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="MainContent">
         <div class="container-fluid body">
             <div class="firstRow">
@@ -33,20 +69,27 @@
                     <nav class="navbar bg-dark navbar-expand">
                         <ul class="navbar-nav DefNaBar bg-dark">
                             <li class="nav-item bg-dark">
-                                <div class="text-white DefNaBarElement"><a href="#SecondRow">Career</a></div>
+                                <div class="text-white DefNaBarElement"><a data-toggle="modal"
+                                        data-target="#modalCareer">Career</a></div>
                             </li>
                             <li class="nav-item bg-dark">
-                                <div class="text-white DefNaBarElement bg-dark"><a href="#thirdRowTitle">Projects</a></div>
+                                <div class="text-white DefNaBarElement bg-dark"><a href="#thirdRowTitle">Projects</a>
+                                </div>
                             </li>
                             <li class="nav-item bg-dark">
-                                <div class="text-white DefNaBarElement bg-dark"><a data-toggle="modal" data-target="#exampleModal">Contact</a></div>
+                                <div class="text-white DefNaBarElement bg-dark"><a data-toggle="modal"
+                                        data-target="#modal">Contact</a></div>
                             </li>
                         </ul>
                         <div class="socialMediaDefault">
-                            <a href="https://www.facebook.com/thomas.minoungou"><img class="social" src="./assets/images/fb_logo.png"></a>
-                            <a href="https://twitter.com/atom_1er"><img class="social" src="./assets/images/twitter_logo.png"></a>
-                            <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img class="social" src="./assets/images/linkedin_logo.png"></a>
-                            <a href="https://github.com/Atom1er?tab=repositories"><img src="./assets/images/github_logo.png"></a>
+                            <a href="https://www.facebook.com/thomas.minoungou"><img class="social"
+                                    src="./assets/images/fb_logo.png"></a>
+                            <a href="https://twitter.com/atom_1er"><img class="social"
+                                    src="./assets/images/twitter_logo.png"></a>
+                            <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img class="social"
+                                    src="./assets/images/linkedin_logo.png"></a>
+                            <a href="https://github.com/Atom1er?tab=repositories"><img
+                                    src="./assets/images/github_logo.png"></a>
                         </div>
                     </nav>
                 </div>
@@ -56,20 +99,25 @@
                             <span class="text-muted">
                                 <div class="text-white bg-dark NaBarElement"><a href="#SecondRow">Career</a></div>
                                 <div class="text-white bg-dark NaBarElement"><a href="#thirdRowTitle">Projects</a></div>
-                                <div class="text-white bg-dark NaBarElement"><a class="DefNaBarElement" data-toggle="modal"
-                                        data-target="#exampleModal">Contact</a></div>
+                                <div class="text-white bg-dark NaBarElement"><a class="DefNaBarElement"
+                                        data-toggle="modal" data-target="#modal">Contact</a></div>
                                 <div class="socialMedia text-white bg-dark NaBarElement">
-                                    <a href="https://www.facebook.com/thomas.minoungou"><img src="./assets/images/fb_logo.png"></a>
-                                    <a href="https://twitter.com/atom_1er"><img src="./assets/images/twitter_logo.png"></a>
-                                    <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img src="./assets/images/linkedin_logo.png"></a>
-                                    <a href="https://github.com/Atom1er?tab=repositories"><img src="./assets/images/github_logo.png"></a>
+                                    <a href="https://www.facebook.com/thomas.minoungou"><img
+                                            src="./assets/images/fb_logo.png"></a>
+                                    <a href="https://twitter.com/atom_1er"><img
+                                            src="./assets/images/twitter_logo.png"></a>
+                                    <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img
+                                            src="./assets/images/linkedin_logo.png"></a>
+                                    <a href="https://github.com/Atom1er?tab=repositories"><img
+                                            src="./assets/images/github_logo.png"></a>
                                 </div>
                             </span>
                         </div>
                     </div>
                     <nav class="navbar navbar-dark bg-dark">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <span>
@@ -81,7 +129,8 @@
                     <div id="title">
                         <h3>Thomas Minoungou</h3>
                     </div>
-                    <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px" height="200px">
+                    <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px"
+                        height="200px">
                     <p class="BrefIntro">Hello, <br> I am a future full stack web Designer. After my graduation in
                         computer Science (Network Security) I decided to learn programing by attending the Rutgers
                         BootCamp program.
@@ -92,33 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="SecondRow" id="SecondRow">
-            <div class="container-fluid">
-                <div>
-                    <h3 id="SecondRowTitle">CAREER</h3>
-                </div>
-                <div id="second">
-                    <img id="EducationThumbnail" src="./assets/images/Education_Section.png" alt="Education thumbnail">
-                    <h3>05-2014 TO 08-2014 :DATASYS INC </h3>
-                    <p>LAN/WLAN TECHNICIAN: <br>
-                        - LAN/WLAN: installation, diagnostic, repair and optimization <br>
-                        - Video surveillance system: installation diagnostic, repair and optimization <br>
-                        - Maintenance: computer/printer/scanner repair (Software and hardware)
-                    </p>
-                    <h3>05-2015 TO 10-2015 :TELECEL FASO S.A. </h3>
-                    <p>NETWORK MONITORING:<br>
-                        - Testing Network quality<br>
-                        - Detecting, fixing, reporting failures of devices or connections<br>
-                        - Local Area Network administrator with Windows Server 2012
-                    </p>
-                    <h3>11-2015 TO 12-2015 :CENI (Independent National Electoral Commission) </h3>
-                    <p>NETWORK ADMINISTRATOR: <br>- Installation, Running and maintaining devices during National
-                        Elections
-                        <br> - Compiling Election Results through a VPN
-                    </p>
-                </div>
-            </div>
-        </div>
+
         <div class="ThirdRow">
             <div class="container-fluid">
                 <div>
@@ -129,69 +152,109 @@
                     <a class="projectElement" href="https://atom1er.github.io/unit-4-game/">
                         <h3>- R.P.G:</h3>
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/rpg.PNG" alt="rpg_game_picture">This is a Simple R.P.G game powered by JQuery and Bootstrap CSS Framework.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/rpg.PNG" alt="rpg_game_picture">This is a Simple
+                        R.P.G game powered by JQuery and Bootstrap CSS Framework.</p>
                     <a class="projectElement" href="https://atom1er.github.io/project1/">
                         <h3>- Movie Finder:</h3>
-                        
+
 
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/movie.PNG" alt="Movie_finder">Using TMDB Api, this app allows the User to find and watch some movies trailer.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/movie.PNG" alt="Movie_finder">Using TMDB Api,
+                        this app allows the User to find and watch some movies trailer.</p>
                     <a class="projectElement" href="https://atom1er.github.io/GifTastic/">
                         <h3>- Gif-Tastic:</h3>
-                        
+
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/giphy.PNG" alt="">Powered by the Giphy Api, this simple app allows you to find any kind of Gif.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/giphy.PNG" alt="">Powered by the Giphy Api, this
+                        simple app allows you to find any kind of Gif.</p>
                     <a class="projectElement" href="https://atom1er.github.io/Responsive-Portfolio/">
                         <h3>- Portfolio Sample:</h3>
-                        
+
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/portfolio_sample.PNG" alt="">This is a simple portfolio layout using the Bootstrap CSS Framework.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/portfolio_sample.PNG" alt="">This is a simple
+                        portfolio layout using the Bootstrap CSS Framework.</p>
                     <a class="projectElement" href="https://atom1er.github.io/TriviaGame/">
                         <h3>- TriviaGame:</h3>
-                        
+
                     </a>
-                    <p><img class="projectsPhotos"  src="./assets/images/tivia.PNG" alt="">A simple quiz app build with JQuery.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/tivia.PNG" alt="">A simple quiz app build with
+                        JQuery.</p>
                     <a class="projectElement" href="https://atom1er.github.io/Word-Guess-Game/">
                         <h3>- Guess The Word:</h3>
-                        
+
                     </a>
-                    <p><img class="projectsPhotos"  src="./assets/images/guess.PNG" alt="">This is a basic guessing app, powered by your JavaScript and dynamically updating HTML and CSS.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/guess.PNG" alt="">This is a basic guessing app,
+                        powered by your JavaScript and dynamically updating HTML and CSS.</p>
                 </div>
 
             </div>
         </div>
-        <div class="Contact">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body modal-color">
-                            <form>
-                                <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">E-mail:</label>
-                                    <input type="email" class="form-control" id="recipient-name" placeholder="example@xyz.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message-text" class="col-form-label">Message:</label>
-                                    <textarea class="form-control" id="message-text"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Send message</button>
-                        </div>
+    </div>
+    <div class="Contact">
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-color">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="recipient-name"
+                                    placeholder="example@xyz.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="Contact">
+        <div class="modal fade" id="modalCareer" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-color">
+                        <div class="SecondRow" id="SecondRow">
+                            <div class="container-fluid">
+                                <div>
+                                    <p id="SecondRowTitle">CAREER</p>
+                                </div>
+                                <div id="second">
+                                    <img id="EducationThumbnail" src="./assets/images/Education_Section.png"
+                                        alt="Education thumbnail">
+                                    <p>05-2014 TO 08-2014 LAN/WLAN Technician  at "DATASYS INC" </p>
+                                    <p>05-2015 TO 10-2015 Network Monitoring at "TELECEL FASO S.A."</p>
+                                    <p>11-2015 TO 12-2015 Network administrator at "CENI" (Independent National Electoral Commission)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
