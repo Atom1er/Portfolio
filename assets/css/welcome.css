@@ -59,22 +59,23 @@
   height: 60px;
 }
 
- .left-social-1{
-  margin-left: 85%;
+.right-social-1{
+  margin-right: 100%;
+  margin-left: -10%;
 }
 
-.left-social-2{
-  margin-top: 45%;
-  margin-left: 75%;
-}
-
-.left-social-3{
-  margin-top: 85%;
+.right-social-2{
+  margin-top: 100%;
   margin-left: 50%;
 }
 
+.left-social-3{
+  margin-left: 85%;
+}
+
 .left-social-4{
-  margin-top: 110%;
+  margin-top: 100%;
+  margin-left: 25%;
 } 
 
 .left-wall{

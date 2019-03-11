@@ -81,6 +81,7 @@ text-decoration: underline;
 color: beige;
 display: inline-block;
 margin: 10px;
+cursor: pointer;
 }
 .ThirdRow{
   box-sizing: content-box;
@@ -240,6 +241,10 @@ margin-right: 10px;
   cursor: pointer;
   color: beige;
   display: inline;
+}
+
+.buttons{
+  cursor: pointer;
 }
 
 @media(max-width:960px){
