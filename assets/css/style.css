@@ -244,8 +244,41 @@ margin-right: 10px;
 }
 
 .buttons{
-  cursor: pointer;
+  /* cursor: pointer; */
+display: inline-block;
+margin: 5px 15px;
+border-radius: 15px;
+background-color: black;
+color: beige;
+padding: 10px;
 }
+
+.buttons:hover{
+  cursor: pointer;
+  background-color: #071bce;
+}
+
+@media(min-width:1000px){
+  .welcome{
+    display: block;
+  }
+
+  .MainContent{
+    display: none;
+  }
+}
+
+@media(max-width:1000px){
+  .welcome{
+    display: none;
+  }
+
+  .MainContent{
+    display: inline-block;
+  }
+}
+
+
 
 @media(max-width:960px){
   body{
