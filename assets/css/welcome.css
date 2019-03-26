@@ -240,6 +240,10 @@
   color: beige;
 }
 
+.welcom-text{
+  margin: 25px;
+}
+
 .text > a:hover{
   color: burlywood;
   text-decoration: none;

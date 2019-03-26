@@ -29,16 +29,18 @@
 <body>
     <div class="welcome">
         <div class="top-left">
-                <img src="./assets/images/html_tag.png" id="htmlTagBackground" alt="html_tag_image">
-                <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img class="top-left-social left-social-3"
-                        src="./assets/images/linkedin_logo.png"></a>
-                <a href="https://github.com/Atom1er?tab=repositories"><img class="top-left-social left-social-4"
-                        src="./assets/images/github_logo.png"></a>
+            <img src="./assets/images/html_tag.png" id="htmlTagBackground" alt="html_tag_image">
+            <a href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"><img class="top-left-social left-social-3"
+                    src="./assets/images/linkedin_logo.png"></a>
+            <a href="https://github.com/Atom1er?tab=repositories"><img class="top-left-social left-social-4"
+                    src="./assets/images/github_logo.png"></a>
         </div>
         <div class="top-right">
             <p class="quote"> “Websites promote you 24/7: No employee will do that.”<br>- Paul Cookson -</p>
-            <a href="https://twitter.com/atom_1er"><img class="top-left-social right-social-1" src="./assets/images/twitter_logo.png"></a>
-            <a href="https://www.facebook.com/thomas.minoungou"><img class="top-left-social right-social-2" src="./assets/images/fb_logo.png"></a>
+            <a href="https://twitter.com/atom_1er"><img class="top-left-social right-social-1"
+                    src="./assets/images/twitter_logo.png"></a>
+            <a href="https://www.facebook.com/thomas.minoungou"><img class="top-left-social right-social-2"
+                    src="./assets/images/fb_logo.png"></a>
         </div>
         <div class="left-wall-head-1"></div>
         <div class="right-wall-head-1"></div>
@@ -48,38 +50,43 @@
         <div class="right-wall-foot"></div>
         <div class="left-wall"></div>
         <div class="right-wall"></div>
-        <div class="ground"><p>Copyright &copy; 2019 | Thomas Minoungou</p></div>
+        <div class="ground">
+            <p>Copyright &copy; 2019 | Thomas Minoungou</p>
+        </div>
         <div class="all">
             <div class="left">
-                <div class="left-2">
-                    <div class="text"><a href="#"></a>Projects</a></div>
+                <div class="left-2" data-toggle="modal" data-target="#modalProject">
+                    <div class="text"><a href="#">Projects</a></div>
                 </div>
                 <div class="left-1" data-toggle="modal" data-target="#modalCareer">
                     <div class="text"><a>Career</a></div>
                 </div>
-                <div class="left-0">
-                    <div class="text"><a href="https://github.com/Atom1er">Github Repositories</a></div>
-                </div>
+                <a href="https://github.com/Atom1er">
+                    <div class="left-0">
+                        <div class="text">Github Repositories</div>
+                    </div>
+                </a>
             </div>
             <div class="center">
-                <div class="explainer"><span>welcome</span></div>
-                <div class="text">What do you think?</div>
+                <div class="welcom-text"><h1>Welcome</h1></div>
+                <div class="text"><h3 class="welcom-text">Thank for your Consideration!</h3></div>
+                <!-- <div class="text">I will be happy to answer </div> -->
             </div>
             <div class="right">
                 <div class="right-2" data-toggle="modal" data-target="#modal">
                     <div class="text"><a>Contact</a></div>
                 </div>
-                <div class="right-1">
-                    <div class="text"><a href="#">About Me</a></div>
+                <div class="right-1" data-toggle="modal" data-target="#modalAboutMe">
+                    <div class="text"><a>About Me</a></div>
                 </div>
-                <div class="right-0">
-                    <div class="text"><a href="#">Social Media</a></div>
+                <div class="right-0" data-toggle="modal" data-target="#modalSocial">
+                    <div class="text"><a>Social Media</a></div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
     <div class="MainContent">
         <div class="container-fluid body">
             <div class="firstRow">
@@ -153,10 +160,7 @@
                     </div>
                     <img id="Profile" src="./assets/images/profile.jpg" alt="Profile Photo" width="150px"
                         height="200px">
-                    <p class="BrefIntro">Hello, <br> I am a future full stack web Designer. After my graduation in
-                        computer Science (Network Security) I decided to learn programing by attending the Rutgers
-                        BootCamp program.
-                        Check out all the progress I have made in three months. Feel free to check out my portfolio to
+                    <p class="BrefIntro">Hello, <br> I am a full stack web Designer graduated from Rutgers Bootcamp. Feel free to check out my portfolio to
                         see all the amazing app I have built. Interested in doing a project together? Feel free to get
                         in touch with me!</p>
                     </p>
@@ -173,7 +177,7 @@
                     <div id="projectsButton" style="display:none">
                         <span>
                             <a class="buttons" data-link="https://little-feet.herokuapp.com/">
-                                <div>-  Little-Feet</div>
+                                <div>- Little-Feet</div>
                             </a>
                         </span>
                         <span>
@@ -213,20 +217,24 @@
                         </span>
                     </div>
 
-                    
+
                     <img id="CareerThumbnail" src="./assets/images/career_Section.png" alt="Career thumbnail">
-                    
+
                     <a class="projectElement" data-link="https://little-feet.herokuapp.com/">
                         <h3>- Little-Feet:</h3>
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/little feet.PNG" alt="Friend_Finder_picture">This is a basic compatibility-based "FriendFinder" application (Dating App). Build with Express and deployed on Heroku.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/little feet.PNG"
+                            alt="Friend_Finder_picture">This is a basic compatibility-based "FriendFinder" application
+                        (Dating App). Build with Express and deployed on Heroku.</p>
 
 
 
                     <a class="projectElement" data-link="https://atom-friend-finder.herokuapp.com/">
                         <h3>- Friend Finder:</h3>
                     </a>
-                    <p><img class="projectsPhotos" src="./assets/images/ff.png" alt="Friend_Finder_picture">This is a basic compatibility-based "FriendFinder" application (Dating App). Build with Express and deployed on Heroku.</p>
+                    <p><img class="projectsPhotos" src="./assets/images/ff.png" alt="Friend_Finder_picture">This is a
+                        basic compatibility-based "FriendFinder" application (Dating App). Build with Express and
+                        deployed on Heroku.</p>
 
 
                     <a class="projectElement" data-link="https://atom1er.github.io/unit-4-game/">
@@ -302,7 +310,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel">New message</h5>
+                        <h5 class="modal-title" id="modalLabel">CAREER</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -310,27 +318,195 @@
                     <div class="modal-body modal-color">
                         <div class="SecondRow" id="SecondRow">
                             <div class="container-fluid">
-                                <div>
-                                    <p id="SecondRowTitle">CAREER</p>
-                                </div>
                                 <div id="second">
                                     <img id="EducationThumbnail" src="./assets/images/Education_Section.png"
                                         alt="Education thumbnail">
-                                    <p>05-2014 TO 08-2014 LAN/WLAN Technician at "DATASYS INC" </p>
-                                    <p>05-2015 TO 10-2015 Network Monitoring at "TELECEL FASO S.A."</p>
-                                    <p>11-2015 TO 12-2015 Network administrator at "CENI" (Independent National
-                                        Electoral Commission)</p>
+                                    <div class="career-p">
+                                        <p>05-2014 TO 08-2014 LAN/WLAN Technician at "DATASYS INC" </p>
+                                        <p>05-2015 TO 10-2015 Network Monitoring at "TELECEL FASO S.A."</p>
+                                        <p>11-2015 TO 12-2015 Network administrator at "CENI" (Independent National
+                                            Electoral Commission)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="Contact">
+        <div class="modal fade" id="modalProject" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">PROJECTS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-color">
+                        <div class="SecondRow" id="SecondRow">
+                            <div class="container-fluid">
+                                <div id="second">
+                                    <div class="career-p">
+                                        <div>
+                                            <span>
+                                                <a class="modal-buttons" href="https://little-feet.herokuapp.com/"
+                                                    data-link="https://little-feet.herokuapp.com/" target="_blank">
+                                                    <div>Little-Feet</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons"
+                                                    href="https://atom-friend-finder.herokuapp.com/"
+                                                    data-link="https://atom-friend-finder.herokuapp.com/"
+                                                    target="_blank">
+                                                    <div>Friend Fiender</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons" href="https://atom1er.github.io/unit-4-game/"
+                                                    data-link="https://atom1er.github.io/unit-4-game/" target="_blank">
+                                                    <div>R.P.G</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons" href="https://atom1er.github.io/project1/"
+                                                    data-link="https://atom1er.github.io/project1/" target="_blank">
+                                                    <div>Movie Finder</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons" href="https://atom1er.github.io/GifTastic/"
+                                                    data-link="https://atom1er.github.io/GifTastic/" target="_blank">
+                                                    <div>Gif-Tastic</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons" href="https://atom1er.github.io/TriviaGame/"
+                                                    data-link="https://atom1er.github.io/TriviaGame/" target="_blank">
+                                                    <div>TriviaGame</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons"
+                                                    href="https://atom1er.github.io/Responsive-Portfolio/"
+                                                    data-link="https://atom1er.github.io/Responsive-Portfolio/"
+                                                    target="_blank">
+                                                    <div>Portfolio Sample</div>
+                                                </a>
+                                            </span>
+                                            <span>
+                                                <a class="modal-buttons"
+                                                    href="https://atom1er.github.io/Word-Guess-Game/"
+                                                    data-link="https://atom1er.github.io/Word-Guess-Game/"
+                                                    target="_blank">
+                                                    <div>Guess The Word</div>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Contact">
+        <div class="modal fade" id="modalAboutMe" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">CAREER</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-color">
+                        <div class="SecondRow" id="SecondRow">
+                            <div class="container-fluid">
+                                <div id="second">
+                                    <img id="EducationThumbnail" src="./assets/images/profile.jpg"
+                                        alt="Education thumbnail">
+                                    <div class="career-p">
+                                        <p>05-2014 TO 08-2014 LAN/WLAN Technician at "DATASYS INC" </p>
+                                        <p>05-2015 TO 10-2015 Network Monitoring at "TELECEL FASO S.A."</p>
+                                        <p>11-2015 TO 12-2015 Network administrator at "CENI" (Independent National
+                                            Electoral Commission)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Contact">
+        <div class="modal fade" id="modalSocial" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">CAREER</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-color">
+                        <div class="SecondRow" id="SecondRow">
+                            <div class="container-fluid">
+                                <div id="second">
+                                    <img id="EducationThumbnail" src="./assets/images/profile.jpg"
+                                        alt="Education thumbnail">
+                                    <div class="career-p">
+                                        <span>
+                                            <a class="modal-buttons"
+                                                href="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"
+                                                data-link="https://www.linkedin.com/in/thomas-minoungou-b80668a0/"
+                                                target="_blank">
+                                                <div>Linkedin</div>
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a class="modal-buttons" href="https://www.facebook.com/thomas.minoungou"
+                                                data-link="https://www.facebook.com/thomas.minoungou" target="_blank">
+                                                <div>facebook</div>
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a class="modal-buttons" href="https://twitter.com/atom_1er"
+                                                data-link="https://twitter.com/atom_1er" target="_blank">
+                                                <div>Twitter</div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 
 </html>

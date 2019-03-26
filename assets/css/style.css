@@ -44,13 +44,6 @@ body{
 }
 
 .SecondRow{
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
-  /* display: block; */
-  /* background-image: radial-gradient(farthest-corner at 0% 0%,#800020, rgb(172, 67, 67),black); */
-  /* border-bottom: 3px solid;
-  border-top: 3px solid; */
-  /* box-shadow: 5px 10px #888888; */
   font-size:1.5rem;
   font-weight:normal;
   line-height:1.5;
@@ -63,10 +56,7 @@ color: beige;
 
 #second, #third{
 box-sizing: content-box;
-/* text-align: justify; */
 color: whitesmoke;
-/* margin: 15px;
-padding: 15px; */
 border-radius: 15px;
 background: #333;
 opacity: 0.6;
@@ -193,6 +183,11 @@ cursor: pointer;
 #contact{
   background-color: rgb(0,0,0, 0);
 }
+
+.career-p{
+  padding: 15px;
+}
+
 .DefNaBarElement:hover{
   text-decoration: underline;
   cursor: pointer;
@@ -243,19 +238,35 @@ margin-right: 10px;
   display: inline;
 }
 
+.modal-buttons{
+  display: inline-block;
+  margin: 5px 15px;
+  border-radius: 15px;
+  background-color: black;
+  color: beige;
+  padding: 10px;
+}
+
+.modal-buttons:hover{
+  cursor: pointer;
+  background-color: #071bce;
+  color: beige;
+  text-decoration: none;
+}
+
 .buttons{
-  /* cursor: pointer; */
-display: inline-block;
-margin: 5px 15px;
-border-radius: 15px;
-background-color: black;
-color: beige;
-padding: 10px;
+  display: inline-block;
+  margin: 5px 15px;
+  border-radius: 15px;
+  background-color: black;
+  color: beige;
+  padding: 10px;
 }
 
 .buttons:hover{
   cursor: pointer;
   background-color: #071bce;
+  text-decoration: none;
 }
 
 @media(min-width:1000px){
@@ -300,7 +311,12 @@ padding: 10px;
 
 @media(max-width: 650px){
   body{
-    font-size: 0.75rem;
+    font-size: 0.50rem;
+  }
+  
+  #thirdRowTitle{
+    position: relative;
+    margin-top: 10%;
   }
 
   #title{
