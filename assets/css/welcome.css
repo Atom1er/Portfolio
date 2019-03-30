@@ -236,6 +236,16 @@
   transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
 }
 
+
+.left-0 > a{
+  color: beige;
+}
+
+.left-0 > a:hover{
+  text-decoration: none;
+  color: beige;
+}
+
 .text > a{
   color: beige;
 }

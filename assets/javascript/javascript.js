@@ -1,11 +1,15 @@
 
 $(document).ready( function(){
+
 var center = $('.center');
 var welcome = $('.welcome');
 var MainContent = $('.MainContent');
 var projectElement = $('.projectElement');
 var third = $('#third');
 
+$('.submit').on('click', ()=>{
+  alert("Sorry, we are not able to send your message. Please send me an email at: at93om@gmail.com");
+});
 
 // MainContent.hide();
 center.on('click', function(){
