@@ -91,7 +91,7 @@ center.on('click', function(){
     var div = $('<div id="iframe">');
     var iframe = $('<iframe>');
     iframe.attr({
-      'width': '90%',
+      'width': '100%',
       'height': '700px',
       'margin-left': '10px',
       'src': src
